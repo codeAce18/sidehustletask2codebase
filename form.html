@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Task 2</title>
+<style>
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        height: 100vh;
+        width: 100vw;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: flex;
+        background: black;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+        align-items: center;
+        color: white;
+    }
+
+    .container {
+        position: relative;
+        height: 560px;
+        width: 350px;
+        border-radius: 20px;
+        background: #15172b;
+        padding: 40px;
+    }
+
+    .intro-text {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    label, input, button {
+        display: block;
+        width: 100%;
+        text-align: left;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    select {
+        display: block;
+        width: 100%;
+        text-align: left;
+        box-sizing: border-box;
+        outline: none;
+        margin-top: 10px;
+        height: 40px;
+        background: #303245;
+        color: white;
+        border-radius: 10px;
+    }
+
+
+    input {
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        background: #303245;
+        padding-left: 20px;
+        caret-color: red;
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    label:nth-of-type(2) {
+        margin-top: 10px;
+    }
+
+
+    label:nth-of-type(3) {
+        margin-top: 10px;
+    }
+
+
+    label:nth-of-type(4) {
+        margin-top: 10px;
+    }
+
+    button {
+        margin-top: 20px;
+        text-align: center;
+        height: 35px;
+        background: #08d;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-weight: 600;
+    }
+
+    h1 {
+
+        font-size: 30px;
+        font-weight: 900;
+
+    }
+
+
+
+
+</style>
+</head>
+<body>
+    <form action="*">
+        <div class="container">
+            <div class="intro-text">
+                <h1>Welcome</h1>
+                <p>Let's create your account</p>
+            </div>
+            <label for="name">Name</label>
+            <input class="no-outline" type="text" name="name" id="name" placeholder="Enter your name" required>
+            <label for="email">Email</label>
+            <input  class="no-outline" type="email" name="email" id="email" placeholder="Enter your email" required>
+            <label for="number">Phone number</label>
+            <input  class="no-outline" type="number" name="number" id="number" placeholder="Enter phone number" required>
+            <select  id="sex">
+                <option value="gender">GENDER</option>
+                <option value="male">MALE</option>
+                <option value="female">FEMALE</option>
+            </select>
+        
+            <label for="password">Password</label>
+            <input  class="no-outline" type="password" name="password" id="password" placeholder="Enter your password" required>
+            <button type="submit" onclick="validateForm()" class="sub-button" value="Go">Submit</button>
+        
+        </div>
+    </form>
+
+       
+  
+    
+    
+    
+    <script>
+        
+        alert("your message is sent successfully");
+        
+        
+    </script>
+
+
+</body>
+</html>
